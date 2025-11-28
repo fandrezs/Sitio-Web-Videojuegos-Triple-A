@@ -12,6 +12,26 @@
       <nav> Efectos en el mercado </nav>
 
       <nav> Alternativas </nav>
+
+       <link href="style.css"
+        rel="stylesheet" />
+
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+        #vis {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 200px;
+            margin: auto;
+        }
+    </style>
+
    
     </head>
    <body>
@@ -46,9 +66,15 @@
 
         <p> La búsqueda de gráficos cada vez más potentes implica más tiempo de desarrollo. Hemos visto como, por ejemplo, las desarrolladoras que trabajan para Sony Playstation cada vez tardan más en lanzar sus títulos. Naughty Dog es uno de sus casos más reconocibles:  </p>
 
-        <div>
+       <div class="seccion-naughty">
 
             <h1> Brecha de lanzamientos de Naughty Dog </h1>
+
+            <div id="vis">
+
+            <script src="visualizacion.js" type="text/javascript"></script>
+
+            </div>
 
             <p>Dentro de los varios estudios de Sony Playstation que han priorizado el crear juegos cada vez más costosos, con largos tiempos de desarrollo y con gráficos y físicas hiperrrealistas cada vez más excesivas, uno de los más reconocidos es Naughty Dog, empresa famosa por crear a Crash Bandicoot, la actualmente desaparecida franquicia de Jak, y los hitazos actuales que siguen siendo Uncharted y The Last of Us (esta última con serie en HBO). </p> 
 
@@ -74,9 +100,9 @@
 
         <p> Por otra parte – como se mencionó anteriormente - considerando que los videojuegos al perseguir la calidad visual de hiperrealismo, como consecuencia tardan más en desarrollarse. Pero el hecho de que muchas veces se pierda el foco en la trama, no es el único efecto en la industria.  </p>
 
-        <p> A lo anterior se suma un factor relevante en cuanto a los trabajadores que se dedican al desarrollo de estos videojuegos. Es decir, que hay despidos de por medio ante las grandes exigencias que interponen las compañías para lograr una resolución hiperrealista, por ende, el número de trabajadores varía en cada entrega, y las compañías que conforman Xbox Game Studio no son la excepción:  </p>
+        <p> A lo anterior se suma un factor relevante en cuanto a los trabajadores que se dedican al desarrollo de estos videojuegos. Es decir, que hay despidos de por medio ante las grandes exigencias que interponen las compañías para lograr una resolución hiperrealista, por ende, el número de trabajadores varía en cada entrega, y las compañías que conforman Xbox Game Studios no son la excepción:  </p>
 
-        <div> 
+        <div class="seccion-xbox"> 
 
             <h1> Xbox Game Studios: La relación entre la cantidad de videojuegos desarrollados por año y la cantidad de trabajadores en todas sus compañías en los últimos 25 años  </h1>
 
