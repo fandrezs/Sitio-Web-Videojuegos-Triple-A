@@ -1,0 +1,24 @@
+body{
+    background: #000000;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #DDCEBB;
+}
+
+p {
+    text-align: justify;
+}
+
+
+.seccion-naughty {
+    margin-top: 50px;
+    padding-bottom: 70px; 
+}
+
+.seccion-xbox {
+    margin-top: 50px;
+    padding-bottom: 70px; 
+}
