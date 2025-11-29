@@ -22,3 +22,38 @@ p {
     margin-top: 50px;
     padding-bottom: 70px; 
 }
+
+.contenedor img {
+  width: 700px;          /* Puedes poner el tamaño que quieras */
+  transition: transform 0.3s ease;  /* Animación suave */
+}
+
+.contenedor img:hover {
+  transform: scale(1.05); /* Zoom leve (5%) */
+}
+
+.contenedor img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;   /* Centrar horizontalmente (opcional) */
+    gap: 20px;                 /* Espacio entre imágenes */
+}
+
+.imagenes img {
+    transition: transform 0.3s ease; /* Si quieres mantener el zoom */
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+}
+
+.imagenes img {
+    max-width: 100%;
+    height: auto;
+}
+
+
