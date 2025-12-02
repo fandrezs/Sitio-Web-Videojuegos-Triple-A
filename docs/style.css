@@ -28,7 +28,7 @@ p {
 }
 
 .contenedor img {
-  width: 700px;          /* Puedes poner el tamaño que quieras */
+  width: 100px;          /* Puedes poner el tamaño que quieras */
   transition: transform 0.3s ease;  /* Animación suave */
 }
 
