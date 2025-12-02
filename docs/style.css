@@ -28,7 +28,7 @@ p {
 }
 
 .contenedor img {
-  width: 100px;          /* Puedes poner el tamaño que quieras */
+  width: 700px;          /* Puedes poner el tamaño que quieras */
   transition: transform 0.3s ease;  /* Animación suave */
 }
 
@@ -59,5 +59,242 @@ p {
     max-width: 100%;
     height: auto;
 }
+
+.timeline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.timeline-content {
+    text-align: center;
+}
+
+#timeline-image {
+    width: 900px;        /* ⬅️ Aumenta más si quieres, ejemplo: 550 o 600 */
+    border-radius: 14px;
+    transition: opacity 0.4s ease;
+}
+
+#timeline-text {
+    margin-top: 12px;
+    color: #DDCEBB;
+    font-size: 20px;
+}
+
+.arrow {
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #DDCEBB;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+/* CONTENEDOR */
+.timeline-container-indie {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* IMAGEN MÁS GRANDE */
+#indie-image {
+    width: 900px;   /* ← Aquí puedes agrandar o achicar */
+    border-radius: 12px;
+    transition: opacity 0.4s ease;
+}
+
+/* TEXTO */
+#indie-text {
+    margin-top: 12px;
+    color: #DDCEBB;
+    font-size: 20px;
+}
+
+/* FLECHAS IGUALES A LA PRIMERA TIMELINE */
+.indie-arrows {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.arrow-btn {
+    background-color: transparent;
+    border: 2px solid #DDCEBB;
+    color: #DDCEBB;
+    font-size: 28px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #DDCEBB;
+    color: black;
+    transform: scale(1.1);
+}
+
+
+
+/* Sección video-logo */
+#hero-video {
+  width: 100%;
+  height:auto;               /* ajusta a gusto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;           /* fondo por si el video no ocupa todo */
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* llena el espacio manteniendo proporción */
+  display: block;
+}
+
+
+.play-fallback {
+  position: absolute;
+  z-index: 10;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-fallback.hidden {
+  display: none;
+}
+
+#hero-video {
+  position: relative; /* para posicionar el botón encima del video */
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #688823;
+    --secondary-color: #D93D86;
+    --tertiary-color: #FF957D;
+    --background-color: #000000;
+    --accent-color: #ECD14D;
+    --text-color: white ;
+    --skull-color: #000000;
+}
+
+
+/* Sección menú */
+#game-menu {
+  color: var(--text-color);
+  padding: 3rem 1rem;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.centro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#game-menu h1 {
+  color: var(--text-color);
+  font-family: 'Jersey 15', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.menu-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  margin-top: 2rem;
+}
+
+.main-card {
+  width: 220px;
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  padding: 25px;
+  background-color: #373838;
+}
+
+.menu-graphic {
+  margin-top: 1rem;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-button {
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  background-color: var(--accent-color);
+  width: 12rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--skull-color);
+  transition: 0.2s;
+}
+
+.menu-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.menu-button a, .menu-button a:visited{
+    color: var(--skull-color);
+    text-decoration: none;
+}
+
+.menu-quote {
+  margin: 10px;
+  font-style: italic;
+}
+
+.menu-title {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.menu-description {
+  margin-top: 0.5rem;
+  max-width: 500px;
+  text-align: center;
+}
+
 
 
