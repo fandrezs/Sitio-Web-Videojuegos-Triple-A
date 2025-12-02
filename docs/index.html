@@ -5,43 +5,79 @@
      
       <title> La nociva obsesión por la perfección visual en los videojuegos Triple A </title>
 
-      <img src="https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/LOGOWEB.png?raw=true" alt="Logotipo" widht="200" height="200"  /> 
-      
-      <nav> <a href="#introduccion">Nivel 1: Introducción</a> </nav> 
-      <nav> <a href="#hiperrealismo-actualidad">Nivel 2: Hiperrealismo</a> </nav>
-       <nav> <a href="#efectos-mercado">Nivel 3: Efectos en el mercado</a> </nav> 
-       <nav> <a href="#alternativas">Nivel 4: Alternativas</a> </nav>
 
-       <link href="style.css"
-        rel="stylesheet" />
+       <link href="style.css" rel="stylesheet" />
 
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-    <style>
-        #vis {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 200px;
-            margin: auto;
-        }
-    </style>
+        <style>
+            #vis {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 200px;
+                margin: auto;
+            }
+        </style>
 
    
     </head>
    <body>
+
+        <!-- Sección del “logo” en video -->
+        <section id="hero-video">
+          <video
+            id="logoVideo"
+            class="hero-video"
+            src="video logotipo final.mp4"  <!-- cambia la ruta si está en otra carpeta -->
+            muted
+            loop
+            playsinline
+          ></video>
+        </section>
+
+        <!-- Sección MENÚ tipo videojuego -->
+        <section id="game-menu">
+          <header class="menu-header">
+            <h1>MENÚ</h1>
+          </header>
+
+          <!-- Imagen central del menú -->
+          <img
+            src="https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Nuevas%20imagenes/gráficas%20-03.png?raw=true"
+            alt="Gráfico menú"
+            class="menu-graphic centro"
+            width="100"
+            height="100"
+          />
+
+          <main class="menu-main">
+            <div class="main-card">
+              <div class="button-container">
+                <button class="menu-button nivel-1" ><a href="#introduccion">Nivel 1: Introducción</a></button>
+                <button class="menu-button nivel-2"><a href="#hiperrealismo-actualidad">Nivel 2: Hiperrealismo</a></button>
+                <button class="menu-button nivel-3"><a href="#efectos-mercado">Nivel 3: Efectos en el mercado</a></button>
+                <button class="menu-button nivel-4"><a href="#alternativas">Nivel 4: Alternativas</a></button>
+              </div>
+            </div>
+
+            <!-- Estos textos los puedes usar para mostrar info al hacer click -->
+            <span class="menu-quote"></span>
+            <h2 class="menu-title"></h2>
+            <p class="menu-description"></p>
+          </main>
+        </section>
+
+
+
       <h2 id="introduccion"> Nivel 1: La evolución gráfica de los videojuegos </h2>
 
         <p> El medio interactivo de los videojuegos es uno de los más populares y exitosos de la historia, generando miles de millones de dólares cada día con múltiples entregas distribuidas en diversas plataformas (consolas, computadores, celulares, etc.). Desde los años 60 hasta la actualidad, su crecimiento y evolución ha atraído a muchísimas personas a lo largo de todo el planeta, y hoy en día muchísima gente vive gracias a los juegos, ya sea desarrollando, produciendo, actuando en ellos, compitiendo en ellos por medio de los e-sports (torneos de títulos multijugador) y hasta simplemente jugando con ellos por medio del mundo del streaming o transmisión en directo.  </p>
