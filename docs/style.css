@@ -98,4 +98,51 @@ p {
     transform: scale(1.2);
 }
 
+/* CONTENEDOR */
+.timeline-container-indie {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* IMAGEN MÁS GRANDE */
+#indie-image {
+    width: 900px;   /* ← Aquí puedes agrandar o achicar */
+    border-radius: 12px;
+    transition: opacity 0.4s ease;
+}
+
+/* TEXTO */
+#indie-text {
+    margin-top: 12px;
+    color: #DDCEBB;
+    font-size: 20px;
+}
+
+/* FLECHAS IGUALES A LA PRIMERA TIMELINE */
+.indie-arrows {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.arrow-btn {
+    background-color: transparent;
+    border: 2px solid #DDCEBB;
+    color: #DDCEBB;
+    font-size: 28px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #DDCEBB;
+    color: black;
+    transform: scale(1.1);
+}
+
+
 

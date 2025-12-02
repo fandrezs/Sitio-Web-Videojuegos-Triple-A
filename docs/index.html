@@ -178,6 +178,23 @@
 
     <h2 id="alternativas"> Nivel 4: La alternativa esperenzadora </h2>
 
+        <p> Primero que todo, ¿cómo diferenciamos los juegos indie de los Triple A?, ya que además de la información respecto a los mismos que se puede encontrar en internet, respecto a si son de empresas pequeñas, que no han sido adquiridas por estudios grandes, a nivel visual suelen diferenciarse de los Triple A por su diferenciación frente al realismo. Hay juegos indie que se ven realistas, sí (aunque se noten imperfecciones en los modelados de personaje y sus movimientos) y juegos Triple A con estéticas no realistas, pero por lo general, los indie suelen ser mucho más experimentales con lo artístico. Aquí unos ejemplos: </p>
+
+<div class="timeline-container-indie">
+
+    <img id="indie-image" 
+         src="https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Indies/Dont%20Starve.jpg?raw=true">
+
+    <p id="indie-text">Don’t Starve, 2013</p>
+
+    <div class="indie-arrows">
+        <button onclick="changeIndie(-1)" class="arrow-btn">⟨</button>
+        <button onclick="changeIndie(1)" class="arrow-btn">⟩</button>
+    </div>
+
+</div>
+
+
         <p> Recientemente, salieron los nominados a juego del año en The Game Awards, una especie de equivalente a los premios Oscar en el cine, pero para videojuegos. Aún con los problemas de estos premios, que dan para otro reportaje, es de respetar que cada vez se les dé más visión a juegos de estudios pequeños dentro de los grandes nominados. Dentro de los 6 seleccionados en la categoría a mejor juego del año, la mitad pertenece a juegos indies: Hades II, Hollow Knight Silksong y Expedition 33.  </p>
 
         <div class="contenedor">
@@ -255,6 +272,42 @@ function nextImage() {
 function prevImage() {
     index = (index - 1 + images.length) % images.length;
     updateImage();
+}
+</script>
+
+<script>
+const indieImages = [
+  "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Indies/Dont%20Starve.jpg?raw=true",
+  "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Indies/Jetbike-1230x600.jpg?raw=true",
+  "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Indies/Return-of-the-Obra-Dinn.jpg?raw=true",
+  "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Indies/SUPERHOT-MIND-CONTROL-DELETE-1-1.jpg?raw=true",
+  "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Indies/bd71a801daf1834c45b3d0824b472cb9d539bc61.png?raw=true",
+  "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Indies/deltarune-pc-mac-juego-steam-wallpaper-4.jpg?raw=true",
+  "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Indies/ss_3e53b3c0209349ba95b281af17b2523eca8aaf64.1920x1080.jpg?raw=true"
+];
+
+const indieTexts = [
+  "Don’t Starve, 2013",
+  "Sable, 2021",
+  "Return of the Obra Dinn, 2018",
+  "SUPERHOT, 2016",
+  "The Binding of Isaac, 2013",
+  "Deltarune, 2018",
+  "Crow Country, 2024"
+];
+
+let indieIndex = 0;
+
+function changeIndie(direction) {
+  indieIndex = (indieIndex + direction + indieImages.length) % indieImages.length;
+
+  document.getElementById("indie-image").style.opacity = "0";
+
+  setTimeout(() => {
+    document.getElementById("indie-image").src = indieImages[indieIndex];
+    document.getElementById("indie-text").textContent = indieTexts[indieIndex];
+    document.getElementById("indie-image").style.opacity = "1";
+  }, 250);
 }
 </script>
 
