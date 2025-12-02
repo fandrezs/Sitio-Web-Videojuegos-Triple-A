@@ -44,6 +44,27 @@
 
         <p> En sus inicios, los juegos se veían pixelados, con muy poco detalle en su apartado visual y casi nula capacidad para siquiera acercarse a un realismo detectable. Poco a poco, con cada generación de nuevas consolas y computadores (las cuales se dan cada 7-8 años aproximadamente), los gráficos fueron creciendo, y tanto los desarrolladores quienes crean los juegos, como los publicadores quienes los distribuyen y financian, fueron buscando cada vez más que sus apartados visuales fuesen más cercanos a la realidad, con mucho énfasis en el trabajo de iluminación y modelados de personajes, hasta llegar al resultado que vemos hoy.  </p>
 
+        <p> A continuación, una breve linea de tiempo con algunos de los juegos más destacados a nivel visual durante cada generación de consolas: </p>
+
+<div class="timeline-container">
+
+    <button class="arrow left" onclick="prevImage()">&#10094;</button>
+
+    <div class="timeline-content">
+        <img id="timeline-image" 
+             src="https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Gonzalo/SI_3DSVC_DonkeyKong_image1600w.jpg?raw=true">
+
+        <p id="timeline-text">Donkey Kong, 1981</p>
+    </div>
+
+    <button class="arrow right" onclick="nextImage()">&#10095;</button>
+
+</div>
+
+
+
+        <p> Para mayor detalle respecto a esta evolución, les dejamos este video: </p>
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/IY33XLE6-i0?si=RgA9ToApvKUQNDs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <p> Esta búsqueda se ha vuelto una obsesión. La mayoría de las empresas Triple A, aquellas que trabajan en videojuegos de gran presupuesto, buscan cada vez más la perfección en cuanto al hiperrealismo, tanto en cómo se ve el juego como en las físicas de este. Tenemos el ejemplo de Rockstar Games, creadores de las famosas franquicias de Grand Theft Auto y Red Dead Redemption, quienes en sus juegos logran animaciones casi idénticas a como se mueven las personas y cosas en la vida real.  </p>
@@ -190,6 +211,53 @@
         <p class="niveles"> ¡Nivel final terminado! Gracias por jugar </p>
     <img src="https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Nuevas%20imagenes/cubo.png?raw=true" alt="texto alternativo"  widht="100" height="200" />
     
+<script>
+const images = [
+    "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Gonzalo/SI_3DSVC_DonkeyKong_image1600w.jpg?raw=true",
+    "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Gonzalo/717dFIe6XxL.jpg?raw=true",
+    "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Gonzalo/Screenshot_The_Legend_of_Dragoon.png?raw=true",
+    "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Gonzalo/MV5BYWU4YzYxNzQtZDBmYy00YjBkLTlkMjYtYjZhNjc3NmVjYzM4XkEyXkFqcGc@._V1_.jpg?raw=true",
+    "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Gonzalo/2ffddc9526ae4b05361ea4c00e767c90.png?raw=true",
+    "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Gonzalo/the-last-of-us-part-ii-remastered_hsfh.jpg?raw=true",
+    "https://github.com/fandrezs/Sitio-Web-Videojuegos-Triple-A/blob/main/assets/images/Im%C3%A1genes%20Gonzalo/202482411555725_1.jpg?raw=true"
+];
+
+const texts = [
+    "Donkey Kong, 1981",
+    "Castlevania: Bloodlines, 1994",
+    "The Legend of Dragoon, 1999",
+    "Silent Hill 3, 2003",
+    "Uncharted 3: Drake’s Deception, 2011",
+    "The Last of Us Part II, 2020",
+    "Senua’s Saga: Hellblade II"
+];
+
+let index = 0;
+
+function updateImage() {
+    const img = document.getElementById("timeline-image");
+    const txt = document.getElementById("timeline-text");
+
+    img.style.opacity = 0;
+
+    setTimeout(() => {
+        img.src = images[index];
+        txt.textContent = texts[index];
+        img.style.opacity = 1;
+    }, 250);
+}
+
+function nextImage() {
+    index = (index + 1) % images.length;
+    updateImage();
+}
+
+function prevImage() {
+    index = (index - 1 + images.length) % images.length;
+    updateImage();
+}
+</script>
+
 
    </body>
 </html>

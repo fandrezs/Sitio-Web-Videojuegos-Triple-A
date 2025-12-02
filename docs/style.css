@@ -60,4 +60,42 @@ p {
     height: auto;
 }
 
+.timeline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.timeline-content {
+    text-align: center;
+}
+
+#timeline-image {
+    width: 900px;        /* ⬅️ Aumenta más si quieres, ejemplo: 550 o 600 */
+    border-radius: 14px;
+    transition: opacity 0.4s ease;
+}
+
+#timeline-text {
+    margin-top: 12px;
+    color: #DDCEBB;
+    font-size: 20px;
+}
+
+.arrow {
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #DDCEBB;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
 
