@@ -205,19 +205,26 @@ p {
     --skull-color: #000000;
 }
 
-
 /* Sección menú */
 #game-menu {
   color: var(--text-color);
   padding: 3rem 1rem;
 }
 
+.menu-header h1 {
+  font-family: 'Open Sans', sans-serif !important;
+  color: #DDCEBB !important;
+  margin: 0;
+  padding: 0;
+}
+
 .menu-header {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
+
 
 .centro {
   display: block;
@@ -258,16 +265,32 @@ p {
   flex-direction: column;
 }
 
+/* BOTONES CORREGIDOS PARA <a> */
 .menu-button {
-  font-weight: bold;
-  cursor: pointer;
-  margin: 10px;
-  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 12rem;
   height: 3rem;
-  border-radius: 5px;
-  border: none;
+
+  background-color: var(--accent-color);
   color: var(--skull-color);
+  text-decoration: none;
+
+  font-size: 0.95rem;   /* 🔹 Texto más pequeño */
+  font-weight: bold;
+
+  border-radius: 6px;
+  margin: 10px;
+
+  white-space: normal;        /* Permite saltos de línea */
+  overflow-wrap: break-word;  /* Evita que el texto se salga */
+  word-wrap: break-word;
+  text-align: center;         /* Centra incluso con saltos */
+  max-width: 200px;           /* Ajusta según cuánto espacio quieras */
+  flex-shrink: 1;             /* Permite que el botón se adapte */
+
   transition: 0.2s;
 }
 
@@ -275,26 +298,14 @@ p {
   background-color: var(--secondary-color);
 }
 
-.menu-button a, .menu-button a:visited{
-    color: var(--skull-color);
-    text-decoration: none;
-}
 
-.menu-quote {
-  margin: 10px;
-  font-style: italic;
-}
 
-.menu-title {
-  margin-top: 1rem;
-  font-size: 1.4rem;
-}
-
+.menu-quote,
+.menu-title,
 .menu-description {
-  margin-top: 0.5rem;
-  max-width: 500px;
-  text-align: center;
+  display: none;
 }
+
 
 
 
