@@ -338,54 +338,73 @@ p {
   margin-bottom: 60px !important;  /* Puedes ajustar el valor */
 }
 
+
+
+
+/* NUEVO CSS GONZALO */
+
+
+/* Contenedor del slider */
 .slider {
   width: 70%;
-  margin: 0 auto;
-  position: relative;
+  margin: 40px auto 10px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* CARRUSEL */
+/* Contenedor de las slides */
 .slides {
-  display: flex;
-  overflow: hidden;
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
+  position: relative;
+  min-height: 150px; /* para que no colapse cuando cambias de slide */
 }
 
+/* Cada slide: por defecto ocultas */
 .slide {
-  min-width: 100%;
-  padding: 30px 40px;
+  display: none;
+}
+
+/* La slide activa se muestra */
+.slide.active {
+  display: block;
+}
+
+/* Estilo de texto (opcional) */
+.slide p {
   text-align: justify;
   line-height: 1.6;
-  box-sizing: border-box; /* ← IMPORTANTE */
 }
 
-/* BOTONES */
+.slide h3{
+  text-align: center;
+}
+
+/* Botones */
+.slider-buttons {
+  margin-top: 15px;
+  text-align: center;
+}
+
 .nav-btn {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
   background-color: #333;
   color: #DDCEBB;
   border: none;
-  padding: 10px 16px;
+  padding: 8px 14px;
+  margin: 0 5px;
   cursor: pointer;
-  border-radius: 8px;
-  font-size: 16px;
-  z-index: 10;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-#prev { left: -60px; }
-#next { right: -60px; }
-
-/* IMAGEN DEBAJO */
+/* Imagen debajo del slider */
 .contenedor {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px; /* "pegada" al slider pero con respiro */
 }
 
-
-
+.contenedor img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
