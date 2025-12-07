@@ -60,6 +60,10 @@ p {
     height: auto;
 }
 
+.img-box {
+  text-align: center;
+}
+
 .timeline-container {
     display: flex;
     align-items: center;
