@@ -338,7 +338,46 @@ p {
   margin-bottom: 60px !important;  /* Puedes ajustar el valor */
 }
 
+#vis {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 
+
+.seccion-naughty h1 {
+  margin: 0 auto 5px;
+  padding: 0;
+  line-height: 1.1;
+  font-size: 40px; /* ajustable */
+}
+
+
+#vis .vega-embed {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+#vis, 
+#vis > *, 
+#vis .vega-embed, 
+#vis svg, 
+#vis canvas {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#vis div,
+#vis section {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#vis {
+  font-size: 0;
+  line-height: 0;
+}
 
 
 /* NUEVO CSS GONZALO */
@@ -347,8 +386,8 @@ p {
 /* Contenedor del slider */
 .slider {
   width: 70%;
-  margin: 40px auto 10px;
-  padding: 20px;
+  margin: 0 auto 10px;
+  padding: 0 20px 20px 20px; /* sin padding arriba */
   box-sizing: border-box;
 }
 
@@ -406,5 +445,15 @@ p {
   height: auto;
 }
 
+/* Naughty Dog */
+#slider-nd .slide-nd { display: none; }
+#slider-nd .slide-nd.active { display: block; }
+
+/* Xbox (ya funciona) */
+#slider-xbox .slide { display: none; }
+#slider-xbox .slide.active { display: block; }
+#slider-xbox {
+  margin-bottom: 35px; /* Ajusta el número a tu gusto */
+}
 
 

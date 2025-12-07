@@ -165,50 +165,47 @@
        <p> La búsqueda de gráficos cada vez más potentes implica más tiempo de desarrollo. Hemos visto como, por ejemplo, las desarrolladoras que trabajan para Sony Playstation cada vez tardan más en lanzar sus títulos. Naughty Dog es uno de sus casos más reconocibles: </p>
 
 
-       <div class="seccion-naughty">
+<div class="seccion-naughty">
 
             <h1> Brecha de lanzamientos de Naughty Dog </h1>
 
-            <div id="vis">
+<div id="vis">
+    <script src="visualizacion.js" type="text/javascript"></script>
+</div>
 
-            <script src="visualizacion.js" type="text/javascript"></script>
-
-            </div>
-
-<div class="slider">
-
-  <div class="slides">
-    <div class="slide active">
+<div id="slider-nd">
+  <div class="slides-nd">
+    <div class="slide-nd active">
       <h3> 1 </h3>
       <p>Dentro de los varios estudios de Sony Playstation que han priorizado el crear juegos cada vez más costosos, con largos tiempos de desarrollo y con gráficos y físicas hiperrrealistas cada vez más excesivas, uno de los más reconocidos es Naughty Dog, empresa famosa por crear a Crash Bandicoot, la actualmente desaparecida franquicia de Jak, y los hitazos actuales que siguen siendo Uncharted y The Last of Us (esta última con serie en HBO).</p>
     </div>
 
-    <div class="slide">
+    <div class="slide-nd">
       <h3> 2 </h3>
       <p>En sus años iniciales trabajando para Playstation, la desarrolladora sacaba juegos casi anualmente, en las épocas de PS1 y PS2. En aquellos tiempos, no solo la tecnología era más simple, sino que el enfoque de la empresas iba orientado a juegos con estética caricaturezca, de caracter más infantil.</p>
     </div>
 
-    <div class="slide">
+    <div class="slide-nd">
       <h3> 3 </h3>
       <p>En Jak II, empezaron a experimentar, manteniendo el estilo visual cartoon, pero intentando apelar a un público adolescente, con personajes más oscuros y una trama algo subida de tono. Pero no sería hasta Uncharted que se enfocarían más en buscar el realismo, en la época de la PS3.</p>
     </div>
 
-    <div class="slide">
+    <div class="slide-nd">
       <h3> 4 </h3>
       <p>Aun con esto, el lanzamiento de juegos segúia siendo constante, no cambiaron mucho su ritmo. Fue entonces que llegó The Last of Us, y desde aquí en adelante, los tiempos de desarrollo se volvieron más largos, con cada vez más empleados y con un aumento en el tamaño de los juegos considerable.</p>
     </div>
 
-    <div class="slide">
+    <div class="slide-nd">
       <h3> 5 </h3>
       <p>Con PS4 y PS5, la tecnología cambio, y la gente en redes sociales, tanto en X como en Youtube, se empezaron a fijar mucho en las físicas de los juegos, y en si los pelos o hasta los poros de los personajes tenían detalle. Naughty Dog, podría decirse, es una de las responsables de este estándar, y es que ellos muchas veces mostraban con orgullo estos avances visuales, siendo considerados de los más grandes en cuanto a esta labor.</p>
     </div>
 
-    <div class="slide">
+    <div class="slide-nd">
       <h3> 6 </h3>
       <p>Sin embargo, los costos y tiempos excesivos de desarrollo, que cada vez siguen aumentando (su próximo juego se supone saldrá en 2027, si es que no se retrasa) han provocado una disminución considerable de sus obras, ya que no han querido experimentar con juegos más pequeños como en el pasado. Quieren ir a más, cada vez más, pero eso se traduce solamente en juegos más hiperrealistas, no necesariamente en títulos más variados en cuanto a jugabilidad. Sus formulas jugables de la saga Uncharted y The Last of Us, aunque sean buenas, ya se han repetido varias veces durante casi dos décadas, y recien su futuro proyecto va a ser una nueva propiedad intelectual, la cual puede o no estar atrasada en cuanto a mecánicas jugables.</p>
     </div>
 
-    <div class="slide">
+    <div class="slide-nd">
       <h3> 7 </h3>
       <p>Para compensar esta falta de juegos originales, el estudio ha sacado multiples remasterizaciones y colecciones a lo largo del tiempo, pero llego un punto en que los propios fans de reían de la enorme cantidad de veces que relanzaban los dos juegos de The Last of Us, como si su creador Neil Druckmann no tuviese nada más que ofrecer. Si se siguiese el modelo de Nintendo, de intercalar entre juegos pequeños y grandes, a lo mejor tendríamos más diversidad y cantidad de juegos por parte del estudio estadounidense.</p>
     </div>
@@ -216,8 +213,8 @@
 
   <!~ BOTONES ~>
   <div class="slider-buttons">
-    <button id="prev" class="nav-btn">Anterior</button>
-    <button id="next" class="nav-btn">Siguiente</button>
+      <button id="prev-nd" class="nav-btn">Anterior</button>
+      <button id="next-nd" class="nav-btn">Siguiente</button>
   </div>
 
 </div>
@@ -230,6 +227,8 @@
     width="200"
     height="300"
   >
+</div>
+
 </div>
 
         <p> ¿Hasta qué punto llegara esto? Las generaciones de consolas duran alrededor de 7 a 8 años aproximadamente, y si los tiempos de desarrollo se siguen extendiendo tanto, no solo habrá menos variedad de juegos Triple A, sino que existe la posibilidad de que ciertos desarrolladores puedan llegar a saltarse una generación entera (cosa que ya ha ocurrido), con mecánicas de juego ya obsoletas, o superadas por empresas independientes, o empresas como Nintendo que enfatizan la diversión por sobre el presupuesto y los gráficos. </p>
@@ -246,26 +245,55 @@
 
         <p> A lo anterior se suma un factor relevante en cuanto a los trabajadores que se dedican al desarrollo de estos videojuegos. Es decir, que hay despidos de por medio ante las grandes exigencias que interponen las compañías para lograr una resolución hiperrealista, por ende, el número de trabajadores varía en cada entrega, y las compañías que conforman Xbox Game Studios no son la excepción: </p>
 
-        <div class="seccion-xbox"> 
-
+      <div class="seccion-xbox"> 
+    
             <h1> Xbox Game Studios: La relación entre la cantidad de videojuegos desarrollados por año y la cantidad de trabajadores en todas sus compañías en los últimos 25 años  </h1>
 
+        <div id="slider-xbox">
+
+          <div class="slides" id="slides-xbox">
+           <div class="slide active">
+           <h3> 1 </h3>
             <p> La fórmula en la que trabajan las diversas compañías que conforman Xbox Game Studios ha sufrido diversos cambios en los últimos 25 años, es decir, se trata de la cantidad de videojuegos que se desarrollan por año así como también la cantidad de trabajadores que conforman dichas compañías quienes desarrollan videojuegos de tipo Triple A.  </p>
+          </div>
 
+           <div class="slide">
+           <h3> 2 </h3>
             <p> Considerando en primer lugar, la cantidad de videojuegos que se han desarrollado desde el año 2000 hasta la actualidad, se puede identificar que si bien ha sido un proceso de altos y bajos, su peak ya tomó lugar durante los años 2013 hasta el 2015. Luego de eso se ha presentado una notable baja, que si bien trató de repuntar en el 2020, vuelve a caer hasta este año.  </p>
+          </div>
 
+            <div class="slide">
+            <h3> 3 </h3>
             <p> Esto no se traduce en que se están dejando de desarrollar juegos, sino que se desarrollan menos títulos por un factor de tiempo, se demoran más. Hasta el momento de esta crónica, para el año 2026 solo se mencionan el desarrollo de dos videojuegos que son Fable y Gears Of War E-Day, pero la tendencia de descenso es notable desde el año 2016 en adelante.  </p>
+          </div>
 
+            <div class="slide">
+            <h3> 4 </h3>
             <p> Pero este fenómeno se puede relacionar con una variable interesante que son la cantidad de trabajadores (la cantidad de trabajadores de todas las compañías que conforman Xbox Game Studios en total en el periodo de tiempo mencionado).  </p>
+          </div>
 
+            <div class="slide">
+            <h3> 5 </h3>
             <p> A diferencia de la cantidad de videojuegos que se desarrollaron en el periodo mencionado, la cantidad de trabajadores alcanzó un peak el 2021 con un recuento de 10.613 desarrolladores en total. Lo interesante es que luego de eso se identifica una caída, y el 2021 es el año que registra más trabajadores en las diferentes compañías, cuando si se trata de la cantidad de videojuegos, en ese año se estaba produciendo una caída en el desarrollo de estos, mientras que en el año 2024 cuando el desarrollo de videojuegos trata de aumentar, la cantidad de trabajadores disminuye si se compara con la cifra del 2023.  </p>
+          </div>
 
+            <div class="slide">
+            <h3> 6 </h3>
             <p> Estos dos datos se traducen en dos cosas diferentes; por una parte hay una disminución en cuanto al desarrollo de videojuegos (hasta el momento), mientras que en cuanto a la cantidad de desarrolladores que contratan las diversas compañías pertenecientes a Xbox, hay muchas caídas, pero a la vez pareciera ir en alza (sin considerar el año 2026 que está en 0 porque no hay información al respecto), por lo que pueden haber diversos factores que inciden en las cifras.  </p>
+          </div>
+          </div>
+
+            <div class="slider-buttons">
+          <button id="prev-xbox" class="nav-btn">Anterior</button>
+          <button id="next-xbox" class="nav-btn">Siguiente</button>
+            </div>
+       </div>
 
             <div id="vis2">
             <script src="visualizacion2.js" type="text/javascript"></script>
             </div>
-        
+      </div>
+
         <p> El hecho de que las grandes empresas persigan un hiperrealismo en sus productos puede conllevar a efectos en el mercado. Como se mencionó anteriormente, hay efectos como lo son la disminución de trabajadores en ciertas empresas. Por ejemplo, en el caso de Xbox Games Studios, la empresa “Obsidian Enterteinment” disminuyo en un 56,39% respecto a la cantidad de desarrolladores en cuanto a sus últimas dos entregas (ambas del año 2025), o en la empresa “Rare”, donde se presentó una disminución de un 55,01% (el penúltimo videojuego es del 2018 y el último del 2020). </p>
 
         <p> Pero también hay un problema en cuanto a los tamaños de los videojuegos (medidos en GB), lo cual no solo afecta directamente a los consumidores, sino que a las mismas empresas e incluso al medioambiente, debido a los servidores físicos y recursos naturales. Por ejemplo, si se analizan las dos últimas entregas de algunas empresas que constituyen a Sony Play Station, hay variaciones bastante significativas en cuanto a la diferencia de sus tamaños (GB).  En el caso de “Sucker Punch” hay un aumento de un 298,2% (el penúltimo videojuego es del 2014 y el último del año 2020), mientras que "Guerrilla Games” hay un aumento de un 350% (ambas entregas del 2024). </p>
