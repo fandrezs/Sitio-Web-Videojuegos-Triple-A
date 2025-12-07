@@ -338,6 +338,54 @@ p {
   margin-bottom: 60px !important;  /* Puedes ajustar el valor */
 }
 
+.slider {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* CARRUSEL */
+.slides {
+  display: flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 30px 40px;
+  text-align: justify;
+  line-height: 1.6;
+  box-sizing: border-box; /* ← IMPORTANTE */
+}
+
+/* BOTONES */
+.nav-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #DDCEBB;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  z-index: 10;
+}
+
+#prev { left: -60px; }
+#next { right: -60px; }
+
+/* IMAGEN DEBAJO */
+.contenedor {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+
 
 
 
